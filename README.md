@@ -12,9 +12,17 @@ An advanced deep learning framework designed to invert heavy non-linear motion b
 
 ---
 
-## 🏛️ System Architecture
+## 📊 Framework Evaluation Results
 
-Traditional convolutional networks struggle with heavy motion blurs due to constrained local receptive fields. This framework introduces a **4-Stage Spatial Downsampling Down-Up Hierarchy** built using deep residual structures (`DeblurResNet`) to address this bottleneck.
+Below are side-by-side performance demonstrations showcasing the framework's capability to restore fine structural details and invert heavy non-linear motion trajectories.
+
+| Input Degraded Image | Framework Restored Output |
+| :---: | :---: |
+| ![Blurred Sample 1](demo_results/demo_results/blurred_image1.png) | ![Restored Sample 1](demo_results/demo_results/restored_image1.png) |
+| ![Blurred Sample 2](demo_results/demo_results/blurred_image2.png) | ![Restored Sample 2](demo_results/demo_results/restored_image2.png) |
+| ![Blurred Sample 3](demo_results/demo_results/blurred_image3.png) | ![Restored Sample 3](demo_results/demo_results/restored_image3.png) |
+
+---
 
 ## 🏛️ System Architecture
 
