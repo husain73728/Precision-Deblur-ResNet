@@ -34,8 +34,8 @@ Traditional convolutional networks struggle with heavy motion blurs due to const
                             ▼
  ┌─────────────────────────────────────────────────────┐
  │            Dynamic Padding Layer (infer.py)         │
- │   - Monitors incoming tensor spatial dimensions    │
- │   - Applies reflection pad to be divisible by 8    │
+ │   - Monitors incoming tensor spatial dimensions     │
+ │   - Applies reflection pad to be divisible by 8     │
  └─────────────────────────────────────────────────────┘
                             │
                             ▼
@@ -48,13 +48,13 @@ Traditional convolutional networks struggle with heavy motion blurs due to const
                             ▼
  ┌─────────────────────────────────────────────────────┐
  │       Deep Residual Processing Loop (model.py)      │
- │   - Multi-layer Bottleneck ResNet Feature Extraction │
+ │   - Multi-layer Bottleneck ResNet Feature Extraction│
  │   - Configured with specialized Zero-Init Tail      │
  └─────────────────────────────────────────────────────┘
                             │
                             ▼
  ┌─────────────────────────────────────────────────────┐
- │       Multi-Objective Loss Boundary Evaluation     │
+ │       Multi-Objective Loss Boundary Evaluation      │
  │   - Charbonnier + SSIM + Laplacian + VGG Loss       │
  └─────────────────────────────────────────────────────┘
                             │
